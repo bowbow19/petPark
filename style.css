@@ -278,6 +278,51 @@ nav {
 .card:hover .card-img {
   opacity: 0.4;
 }
+
+/* 領養資訊 */
+.adoption-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  background: #fff;
+  -webkit-box-shadow: 2px 10px 12px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 2px 10px 12px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 10px 12px 0px rgba(0, 0, 0, 0.1);
+}
+
+.adoption-image {
+  width: 100%;
+}
+
+.adoption-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.adoption-info .title {
+  font-size: 1.75rem;
+  margin-bottom: 0.4rem;
+  color: #267c99;
+}
+.adoption-info .description {
+  font-size: 1rem;
+  margin-bottom: 0.9rem;
+  color: #5e5c5c;
+}
+
+footer {
+  padding: 1rem;
+  width: 100%;
+  background-color: #4a4a4a;
+  letter-spacing: 2px;
+  color: white;
+  text-align: center;
+}
+
 /********* 電腦版樣式 *********/
 @media screen and (min-width: 768px) {
   .action {
@@ -338,5 +383,18 @@ nav {
   }
   .sub-banner .action {
     font-size: 1.2rem;
+  }
+
+  .adoption-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .adoption-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 1rem;
   }
 }
